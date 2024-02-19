@@ -1,0 +1,41 @@
+/* FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+@media (max-width: 360px) {
+  h1 {
+    font-size: 34px;
+  }
+
+  .container {
+    padding: 20px;
+    height: 100vh;
+  }
+
+  #gameboard {
+    width: 300px;
+    margin-top: 40px;
+  }
+  .box {
+    height: 100px;
+    width: 100px;
+    font-size: 120px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+  }
+  .box:nth-child(3n) {
+    border-right: none;
+  }
+  .box:nth-child(6) ~ .box {
+    border-bottom: none;
+  }
+  button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 200ms transform;
+    font-weight: 600;
+  }
+}
